@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Quattrocento&display=swap');
+
+:root {
+  --background: #defff2;
+  --secondary-dark: #464f51;
+  --dark: #000009;
+  --light: #a599b5;
+  --accent: #0ff4c6;
+}
+
+* {
+  font-family: 'Lato', sans-serif, 'Quattrocento', serif;
+  background: var(--dark);
+  color: var(--background);
+}
+
+.home-container {
+  position: relative;
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-shadow: 1px 1px 1px #a599b5,
+             1px 2px 1px #a599b5,
+             1px 3px 1px #a599b5,
+             1px 4px 1px #a599b5,
+             1px 5px 1px #a599b5,
+             1px 6px 1px #a599b5,
+             1px 10px 5px #00000980,
+             1px 15px 10px #00000966,
+             1px 20px 30px #0000094d,
+             1px 25px 50px #00000933;
+  font-size: 24px;
+}
+
+.card {
+  background-color: var(--secondary-dark);
+  border: var(--background);
+  
+}
