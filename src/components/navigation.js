@@ -9,10 +9,6 @@ export default function Nav({
             target.scrollIntoView({ behavior: 'smooth' });
         }
     };
-
-    const openResumeInNewTab = () => {
-        window.open('/Resume', '_blank');
-    };
         
     return (
         <ul className='nav nav-tab'>
@@ -24,9 +20,6 @@ export default function Nav({
             </li>
             <li className='nav-item'>
                 <a href="#projects" onClick={() => scrollToSection('projects')} className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}>Projects</a>
-            </li>
-            <li className='nav-item'>
-                <a href="#resume" onClick={openResumeInNewTab} className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>Resume</a>
             </li>
             <li className='nav-item'>
                 <a href="#contact" onClick={() => scrollToSection('contact')} className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>Contact</a>

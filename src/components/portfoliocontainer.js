@@ -1,7 +1,9 @@
 import React from 'react';
-import About from './header';
+import About from '../components/pages/header';
+import Footer from '../components/pages/footer';
+import Contact from '../components/pages/contact';  
 import Nav from './navigation';
-import Projects from './project';
+import Projects from '../components/pages/project';
 
 export default function PortfolioContainer() {
     return (
@@ -9,7 +11,8 @@ export default function PortfolioContainer() {
           <Nav />
             <About />
             <Projects />
-          
+            <Contact />
+            <Footer />
         </div>
       );
 }
